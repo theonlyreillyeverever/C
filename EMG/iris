@@ -1,0 +1,16 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="X[2] <= 2.35\ngini = 0.439\nsamples = 75\nvalue = [[46, 29]\n[55, 20]\n[49, 26]]"] ;
+1 [label="gini = 0.0\nsamples = 29\nvalue = [[0, 29]\n[29, 0]\n[29, 0]]"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="X[2] <= 5.05\ngini = 0.328\nsamples = 46\nvalue = [[46, 0]\n[26, 20]\n[20, 26]]"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label="X[617] <= 1.23\ngini = 0.11\nsamples = 22\nvalue = [[22, 0]\n[2, 20]\n[20, 2]]"] ;
+2 -> 3 ;
+4 [label="gini = 0.0\nsamples = 20\nvalue = [[20, 0]\n[0, 20]\n[20, 0]]"] ;
+3 -> 4 ;
+5 [label="gini = 0.0\nsamples = 2\nvalue = [[2, 0]\n[2, 0]\n[0, 2]]"] ;
+3 -> 5 ;
+6 [label="gini = 0.0\nsamples = 24\nvalue = [[24, 0]\n[24, 0]\n[0, 24]]"] ;
+2 -> 6 ;
+}
